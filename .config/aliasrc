@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+alias	nv="nvim"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -vI" \
+	mkd="mkdir -pv" \
+	ffmpeg="ffmpeg -hide_banner"
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+    ca="calcurse" \
+    mp="ncmpcpp" \
+	ka="killall" \
+	g="git" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+    z="zathura"
+#	trem="transmission-remote" \
+#	YT="youtube-viewer" \
+#	p="sudo pacman" \
+#	xi="sudo xbps-install" \
+#	xr="sudo xbps-remove -R" \
+#	xq="xbps-query" \
+
+#alias \
+#	magit="nvim -c MagitOnly" \
+#	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+#	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+#	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+#
+
