@@ -1,0 +1,5 @@
+setxkbmap es
+xrdb /home/realityspeedrun/.Xresources
+picom&
+dwmblocks&
+.scripts/bg/rtwall.sh&
